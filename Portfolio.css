@@ -1,61 +1,168 @@
 body{
-    background-color: white;
+    padding-top: 16% !important;
+    background-color: rgb(31, 36, 43);
     font-family:Arial, Helvetica, sans-serif;
+    color: rgb(237, 237, 237);
+    text-align: justify !important;
+    padding-bottom: 5%;
 }
-.topicos{
-
+#barraNaveg{
+    padding-right: 3%;
+    background-color: rgb(42, 216, 130);
+    color: rgb(255, 255, 255);
 }
-.trajetoria{
-
+#apresent1{
+    color: rgb(134, 199, 167);
+    font-size: 100%;
 }
-.header{
-
+#apresent2{
+    font-size: 400%;
+    font-weight: bold;
 }
-.navbar-text{
-
+#apresent3{
+    color: rgb(42, 216, 130);
+    font-weight: 1000;
+    font-size: 170%;
 }
-.home{
-
-}
-#tituloHome{
-
-}
-.apresentacao{
-
-}
-#titulo{
-
+.navbar{
+    background-color: rgb(42, 216, 130) !important;
+    padding-left: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-weight: bold;
 }
 #resumo{
-
+    padding-top: 3%;
+    padding-bottom: 10%;
+    text-align: justify !important;
 }
-.proj{
-
+.btn{
+    background-color: rgb(42, 216, 130);
+    color: rgb(31, 36, 43);
+    border: 0;
 }
-#tituloProj{
-
+#proj{
+    padding-top: 5%;    
+}
+.topicos{
+    margin-left: 0px !important;
+    font-weight: bold;
+    color: rgb(42, 216, 130) !important;
+}
+#proj{
+    padding-top: 5%;
 }
 #sobre{
+    padding-top: 5%;
+}
+#contato{
+    padding-top: 5%;
+}
+#skills{
+    font-weight: bold !important;
+    color: rgb(42, 216, 130) !important;    
+}
+#softSkills{
+    font-weight: bold;
+    color: rgb(42, 216, 130);
+}
+#hardSkills{
+    font-weight: bold;
+    color: rgb(42, 216, 130);
+}
+#resSob{
+    padding-bottom: 3%;
+}
+#linha1{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+#empresa1{
+    font-weight: bold;
+    font-size: 120% ;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(42, 216, 130) !important;
+}
+#empresa2{
+    font-weight: bold;
+    font-size: 120% ;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(42, 216, 130) !important;
+}
+#tableExp{
+    border: 1px solid;
+    border-color: rgb(42, 216, 130);
+}
+#experiencia{
+    border-right: 1px solid rgb(42, 216, 130);
+    padding-right: 10px;
+}
+#topicoSkills{
+    padding-left: 10px;
+}
+#topicoSkills ul {
+  margin: 0;
+  padding-left: 20px;
+}
+#FormAcademica{
+    margin-bottom: 0;
+    padding: 15px;
+    border: 1px solid rgb(42, 216, 130);
+    border-bottom: none;
+    background-color: rgb(33, 37, 41);
+}
+#espacamento{
+    padding: 3%;
+}
+#marcaNavbar{
+    font-weight: bold;
+}
+#submitContato{
+    width: fit-content;
+}
+#formContato{
+    width: 49%;
+}
+#tituloContato{
+    padding-bottom: 2%;
+}
+.camposContato{
+    font-weight: bold;
+}
+#info{
+    font-size: large;
+}
+label{
+    font-size: large;
+    font-weight: bold;
+}
+dialog{ 
+    padding: 0px;
+    border-style: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgb(20, 21, 24);
 
 }
-.sobre{
+dialog .wrapper{
+    padding: 16px;
+    color: rgb(237, 237, 237);
+}
+/*
+.btnPopup{
+    padding: 5px;
+    border-radius: 7px;
+    border-style: none;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(42, 216, 130);
+}*/
+#imgGerador{
 
 }
-#trajetoria{
-
-}
-#objetivos{
-
-}
-.subTopicos{
-
-}
-.contato{
-
-}
-.info{
-
-}
-.rodape{
-
+#conteudoPopup{
+    width: 60%;
 }

@@ -1,107 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfólio</title>
-        <!-- Bootstrap CSS (via CDN) -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="Portfolio.css">
-    </head>
 
-    <body>
-        <header class="container">
-            <a href="#home">Portfolio </a>
-            <nav class="navbar-text">
-                <a href="#" class="active">Home</a>
-                <a href="#proj">Projetos</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
-        </header>
-        <div class="container" id="home">
-            <div class="apresentacao" id="titulo">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio</title>
+    <!-- Bootstrap CSS (via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+
+<body class="container">
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top" id="barraNaveg">
+        <div class="container-fluid">
+            <!-- Esquerda: Logo -->
+            <a class="navbar-brand" id="marcaNavbar" href="#">PORTFOLIO.</a>
+
+            <!-- Botão do menu colapsável (mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Direita: Links da navbar -->
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#proj" class="nav-link">PROJETOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-start" id="home">
+        <div class="row justify-content-between">
+            <div class="col-9" id="titulo">
                 <h3 id="apresent1">Olá, eu sou</h1>
-                <h1 id="apresent2">Vinícius Ramos</h1>
-                <h6 id="apresent3">Desenvolvedor</h1>
+                    <h1 id="apresent2">VINÍCIUS RAMOS</h1>
+                    <h6 id="apresent3">DESENVOLVEDOR</h1>
+                        <div class="apresentacao" id="resumo">
+                            <p name="parInicial" id="parInicial">Sou Vinícius Uriel da Silva Ramos, um profissional
+                                dedicado, que busca evolução e formas de aplicar meus conhecimentos em diversas
+                                situações constantemente. Tenho experiência em suporte técnico e venho expandindo minhas
+                                habilidades em desenvolvimento de software e desenvolvimento web. Estou comprometido com
+                                o aprendizado contínuo e com o meu crescimento profissional.</p>
+                        </div>
             </div>
-            <div class="apresentacao" id="resumo">
-                <p name="parInicial" id="parInicial">Profissional dedicado, sempre buscando evoluir e aplicar meus conhecimentos em diversas situações. Tenho experiência em suporte técnico e venho expandindo minhas habilidades em desenvolvimento de software e desenvolvimento web. Estou comprometido com o aprendizado contínuo e com o meu crescimento profissional.</p>
+            <div class="col align-self-center" id="foto">
+                <img src="FotoPortfolio.png" alt="a" class="img-fluid" width="300" height="300">
             </div>
         </div>
+        
+        <div id="espacamento"><p><br></p></div>
+        
+        <div class="row justify-content-start" id="botoes">
+            <div class="col-2" id="botaoContato">
+                <!-- <button type="button" autofocus onclick="document.getElementById('contato')">Entrar em Contato</button> -->
+                <a href="#contato" class="btn btn-primary">Entrar em Contato</a>
+            </div>
+            <div class="col-2" id="botaoCurriculo">
+                <a target="_blank" rel="noopener noreferrer" href="CurriculoJun25.pdf" class="btn btn-primary">Baixar
+                    Currículo</a>
+            </div>
+        </div>
+    </div>
 
-        <div class="container" id="proj">
-            <h2 class="topicos" id="projetos">Projetos</h2>
-            <p>GitHub: https://github.com/ViniciusUSRamos</p>
+    <div class="" id="proj">
+        <h2 class="topicos" id="projetos">Projetos</h2>
+        GitHub: <a href="https://github.com/ViniciusUSRamos">https://github.com/ViniciusUSRamos</a><br><br>
 
+        <button class="btn btn-primary" onclick=showDialog()>Gerador de Cotações</button>
 
+        <div id="popup">
+            <dialog id="conteudoPopup">
+                <div class="wrapper">
+                    <h2>Gerador de Cotações</h2>
+                    <p>Projeto desenvolvido para a empresa UJR Piscinas destinado à geração de cotações 
+                        personalizadas em formato PDF desenvolvido em Python.</p>
+                    <img id="imgGerador" src="./imgs/GeradorCotacoes/TelaInicial.png" alt="Tela Inicial do Projeto" class="img-fluid"><br><br>
+                    <button class="btnPopup btn btn-primary" data-dismiss="modal" onclick="closeDialog()">Fechar</button>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ViniciusUSRamos/GeradorCotacoes" class="btn btn-primary" style="width: fit-content;">Abrir Repositório no GitHub</a>
+                </div>
+            </dialog>
         </div>
 
-        <div class="container" id="sobre">
-            <h2 class="topicos" id="sobre">Sobre</h2>
-            <div id="trajetoria">
-                <p>Técnico de suporte com experiência em atendimento remoto, resolução de bugs e dúvidas, e desenvolvimento de soluções para sistemas de automação de estacionamentos. Forte conhecimento em Active Directory e criação de manuais técnicos.</p>
-                
+
+        <!--
+        <a href="https://github.com/ViniciusUSRamos/GeradorCotacoes.git" rel="noopener noreferrer" class="btn btn-primary">Gerador de Cotacoes</a><br><br>
+
+        <div id="geradorCotacoes" class="popup" onclick="geradorCotacoes()">
+            Gerador de Cotações | 
+            <span class="popuptext" id="GeradorUJR">Teste</span>
+        </div>
+        -->
+        
+
+    </div>
+
+    <div class="row" id="sobre">
+        <h2 class="topicos" id="sobre">Sobre</h2>
+        <p class="resSob">Técnico de suporte com experiência em atendimento remoto, resolução de bugs e dúvidas, e
+            desenvolvimento de soluções para sistemas de automação de estacionamentos. Forte conhecimento em Active
+            Directory e criação de manuais técnicos.</p>
+        <p class="resSob">Busco oportunidades para atuar como desenvolvedor, contribuindo com soluções eficientes, 
+            aprendizado contínuo e evolução junto à equipe e aos projetos da empresa.</p>
+        <div id="posicaoFormacao">
+            <div class="row" id="FormAcademica">
                 <h4 class="topicos">Formação Acadêmica</h4>
                 <p>Curso técnico em Informática integrado ao ensino médio — IFRS (Campus Rolante) — Graduação: 2021</p>
                 <p>Bacharelado em Ciência da Computação — Feevale — Cursando atualmenta</p>
-
-                <h4 class="topicos">Experiência</h4>
-                <p>Gestor Tech — V4 Company (2021 — 2023)</p>
-                <p>Liderança e coordenação de projetos. Responsável por garantir a qualidade das entregas, otimizar processos internos e alinhar soluções técnicas com os objetivos estratégicos da empresa. Atuação direta na gestão de demandas, suporte a clientes e implementação de melhorias contínuas.</p>
-                <p>Técnico de Helpdesk — SigaPark Automação (2023 — Atualmente)</p>
-                <p>Responsável por suporte remoto, solucionando problemas técnicos complexos relacionados ao software. Atuação proativa na identificação e correção de bugs, suporte funcional detalhado para garantir a continuidade operacional dos clientes.</p>
-
             </div>
-
-            <div id="objetivos">
-                <h4 class="topicos">Objetivos Profissionais</h4>
-                <p>Busco oportunidades para atuar como desenvolvedor, contribuindo com soluções eficientes, aprendizado contínuo e evolução junto à equipe e aos projetos da empresa.</p>
-
-                <h4 class="topicos">Skills</h4>
-                <h5 class="subTopicos">Hard Skills</h5>
-                <ul>
-                    <li>Lógica de programação e estrutura de dados</li>
-                    <li>Desenvolvimento em Python</li>
-                    <li>Desenvolvimento em Java</li>
-                    <li>Desenvolvimento Web front-end</li>
-                    <li>Manipulação de dados com SQL</li>
-                    <li>Modelagem de banco de dados</li>
-                </ul>
-                <h5 class="subTopicos">Soft Skills</h5>
-                <ul>
-                    <li>Comunicação clara com usuários técnicos e não técnicos</li>
-                    <li>Proatividade na resolução de problemas</li>
-                    <li>Capacidade de aprendizado rápido</li>
-                    <li>Trabalho em equipe e colaboração com diferentes áreas</li>
-                </ul>
-            </div>
-
         </div>
+
         
-        <div class="container" id="contato">
-            <div class="info"></div>
-                <h2 class="topicos">Entre em contato</h2>
-                <p>Telefone / WhatsApp: (51) 98488-7098</p>
-                <p>E-mail: ramos.viniciusuriel@gmail.com</p>
-                <p>LinkedIn: www.linkedin.com/in/vinícius-ramos-66b39a204</p>
-                <p>Taquara/RS - Brasil</p>
+            <!-- <div class="col" id="objetivos">
+                <h4 class="topicos">Objetivos Profissionais</h4>
+                <p>Busco oportunidades para atuar como desenvolvedor, contribuindo com soluções eficientes, aprendizado
+                    contínuo e evolução junto à equipe e aos projetos da empresa.</p>
+                </div> -->
+                    
+        <div class="table table-responsive table-bordered table-dark" id="tableExp">
+            <div class="row" id="linha2">
+
+                <div class="col" id="experiencia">
+                    <h4 class="topicos">Experiência</h4>
+                    <p id="empresa1">Gestor Tech - V4 Company (2021 - 2023)</p>
+                    <p>Liderança e coordenação de projetos. Responsável por garantir a qualidade das entregas, otimizar
+                        processos internos e alinhar soluções técnicas com os objetivos estratégicos da empresa. Atuação
+                        direta na gestão de demandas, suporte a clientes e implementação de melhorias contínuas.</p>
+                    <p id="empresa2">Técnico de Helpdesk - SigaPark Automação (2023 - Hoje)</p>
+                    <p>Responsável por suporte remoto, solucionando problemas técnicos complexos relacionados ao software.
+                        Atuação proativa na identificação e correção de bugs, suporte funcional detalhado para garantir a
+                        continuidade operacional dos clientes.</p>
+
+                </div>
+
+                <div class="col" id="topicoSkills">
+                    <h4 class="topicos">Skills</h4>
+                    <h5 id="softSkills">Hard Skills</h5>
+                    <ul>
+                        <li>Lógica de programação e estrutura de dados</li>
+                        <li>Desenvolvimento em Python</li>
+                        <li>Desenvolvimento em Java</li>
+                        <li>Desenvolvimento Web front-end</li>
+                        <li>Manipulação de dados com SQL</li>
+                        <li>Modelagem de banco de dados</li>
+                    </ul>
+                    <h5 id="hardSkills">Soft Skills</h5>
+                    <ul>
+                        <li>Comunicação clara com usuários técnicos e não técnicos</li>
+                        <li>Proatividade na resolução de problemas</li>
+                        <li>Capacidade de aprendizado rápido</li>
+                        <li>Trabalho em equipe e colaboração com diferentes áreas</li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="" id="contato">
+        <h2 class="topicos" id="tituloContato">Entre em contato</h2>
+        <div class="d-flex justify-content-between">
+            <div class="" id="info">
+                <span class="camposContato">Telefone / WhatsApp: </span> <a href="https://api.whatsapp.com/send/?phone=5551984887098&text&type=phone_number&app_absent=0">(51) 98488-7098</a> <br><br>
+                <span class="camposContato">E-mail: </span> <a href="mailto:ramos.viniciusuriel@gmail.com">ramos.viniciusuriel@gmail.com</a> <br><br>
+                <span class="camposContato">LinkedIn: </span> <a href="www.linkedin.com/in/vinícius-ramos-66b39a204"> Vinicius Ramos</a>
+                
+            </div>
+
+            <div class="form-group" id="formContato" data-bs-theme="dark">
+                    <label for="nome">Nome*: </label><br>
+                    <input class="form-control p-2" style="width: fit-content;" type="text" id="nome" name="nome" placeholder="João da Silva" required><br>
+                    <div class="invalid-feedback">Por favor, informe o seu nome para prosseguir!</div>
+                    <label for="email">E-mail: </label><br>
+                    <input class="form-control p-2" style="width: fit-content;" type="text" id="email" name="email" placeholder="exemplo@gmail.com"><br>
+                    <label for="fone">Telefone*: </label><br>
+                    <input class="form-control p-2" style="width: fit-content;" type="text" id="fone" name="fone" placeholder="51 99999-9999" required><br>
+                    <div class="invalid-feedback">Por favor, informe o seu número de telefone para prosseguir!</div>
+                    <label for="mensagem">Mensagem: </label><br>
+                    <textarea class="form-control w-75 p-2" id="mensagem" name="mensagem"></textarea>
+                    <small id="infoObrigatorio" class="form-text text-muted">Campos com * são obrigatórios.</small><br><br>
+
+                    <button type="submit" class="btn btn-primary" id="submitContato">Enviar informações</button>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap JS (via CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+
+    <script>
+        function ajustarEspacoNavbar() {
+            const navbar = document.querySelector('.navbar.fixed-top');
+            const body = document.body;
+
+            if (navbar) {
+                const altura = navbar.offsetHeight;
+                body.style.paddingTop = `${altura}px`;
+            }
+        }
+
+        window.addEventListener('load', ajustarEspacoNavbar);
+        window.addEventListener('resize', ajustarEspacoNavbar);
+    </script>
+
+    <script src="Portfolio.js"></script>
+</body>
 
 
-    <footer>
-        <div class="container">
-            <div class="row h-100 justify-content-center align-items-center">
-                <!--colocar hiperlinks abaixo-->
-                <h4 >Links Úteis: </a>
-                <a href="www.linkedin.com/in/vinícius-ramos-66b39a204">LinkedIn</a> | 
-                <a href="https://github.com/ViniciusUSRamos">GitHub</a> | 
-                <a href="https://api.whatsapp.com/send/?phone=5551984887098&text&type=phone_number&app_absent=0">WhatsApp</a>
-            </div>
+<footer>
+    <div class="d-flex align-lg-center">
+        <div class="row h-100 justify-content-center align-items-center">
+            <!--
+            <h4>Links Úteis: </a>
+                <a href="www.linkedin.com/in/vinícius-ramos-66b39a204">LinkedIn</a> |
+                <a href="https://github.com/ViniciusUSRamos">GitHub</a> |
+                <a
+                    href="https://api.whatsapp.com/send/?phone=5551984887098&text&type=phone_number&app_absent=0">WhatsApp</a>
+            -->
         </div>
-    </footer>
+    </div>
+</footer>
+
 </html>
