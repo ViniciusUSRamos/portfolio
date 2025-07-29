@@ -75,19 +75,24 @@
 
     <div class="" id="proj">
         <h2 class="topicos" id="projetos">Projetos</h2>
-        GitHub: <a href="https://github.com/ViniciusUSRamos">https://github.com/ViniciusUSRamos</a><br><br>
+        <p>Aqui estão alguns projetos que desenvolvi, aplicando na prática meus conhecimentos na solução de problemas para empresas e projetos pessoais.</p>
 
-        <button class="btn btn-primary" onclick=showDialog()>Gerador de Cotações</button>
+        <button id="tituloCard" class="btn btn-primary" onclick=showDialog() style="border-radius: 25px;">GERADOR DE COTAÇÕES
+            <br><img src="./imgs/GeradorCotacoes/TelaInicial.png" style="width: 270px; padding: 15px; padding-bottom: 20px;" alt="">
+        </button>
 
         <div id="popup">
-            <dialog id="conteudoPopup">
+            <dialog id="conteudoPopup" class="cardPopup">
                 <div class="wrapper">
-                    <h2>Gerador de Cotações</h2>
+                    <h2 class="tituloProjetos">Gerador de Cotações</h2>
                     <p>Projeto desenvolvido para a empresa UJR Piscinas destinado à geração de cotações 
                         personalizadas em formato PDF desenvolvido em Python.</p>
                     <img id="imgGerador" src="./imgs/GeradorCotacoes/TelaInicial.png" alt="Tela Inicial do Projeto" class="img-fluid"><br><br>
-                    <button class="btnPopup btn btn-primary" data-dismiss="modal" onclick="closeDialog()">Fechar</button>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ViniciusUSRamos/GeradorCotacoes" class="btn btn-primary" style="width: fit-content;">Abrir Repositório no GitHub</a>
+                    <div class="botoesPopup">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/ViniciusUSRamos/GeradorCotacoes" class="btn btn-primary" style="width: fit-content;">Abrir Repositório</a>
+                        <button class="btnPopup btn btn-primary" data-dismiss="modal" onclick="closeDialog()">Fechar</button>
+                    </div>
+                    
                 </div>
             </dialog>
         </div>
@@ -176,12 +181,12 @@
                 
             </div>
 
-            <div class="form-group" id="formContato" data-bs-theme="dark">
+            <div class="form-group" id="formContato" data-bs-theme="dark" onsubmit="">
                     <label for="nome">Nome*: </label><br>
                     <input class="form-control p-2" style="width: fit-content;" type="text" id="nome" name="nome" placeholder="João da Silva" required><br>
                     <div class="invalid-feedback">Por favor, informe o seu nome para prosseguir!</div>
                     <label for="email">E-mail: </label><br>
-                    <input class="form-control p-2" style="width: fit-content;" type="text" id="email" name="email" placeholder="exemplo@gmail.com"><br>
+                    <input class="form-control p-2" style="width: fit-content;" type="email" id="email" name="email" placeholder="exemplo@gmail.com"><br>
                     <label for="fone">Telefone*: </label><br>
                     <input class="form-control p-2" style="width: fit-content;" type="text" id="fone" name="fone" placeholder="51 99999-9999" required><br>
                     <div class="invalid-feedback">Por favor, informe o seu número de telefone para prosseguir!</div>
@@ -212,21 +217,19 @@
     </script>
 
     <script src="Portfolio.js"></script>
-</body>
 
-
-<footer>
-    <div class="d-flex align-lg-center">
-        <div class="row h-100 justify-content-center align-items-center">
-            <!--
-            <h4>Links Úteis: </a>
-                <a href="www.linkedin.com/in/vinícius-ramos-66b39a204">LinkedIn</a> |
-                <a href="https://github.com/ViniciusUSRamos">GitHub</a> |
-                <a
-                    href="https://api.whatsapp.com/send/?phone=5551984887098&text&type=phone_number&app_absent=0">WhatsApp</a>
-            -->
+    <footer>
+        <div class="d-flex align-lg-center">
+            <div class="row h-100 justify-content-center align-items-center">
+                <!--
+                <h4>Links Úteis: </a>
+                    <a href="www.linkedin.com/in/vinícius-ramos-66b39a204">LinkedIn</a> |
+                    <a href="https://github.com/ViniciusUSRamos">GitHub</a> |
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5551984887098&text&type=phone_number&app_absent=0">WhatsApp</a>
+                -->
+            </div>
         </div>
-    </div>
-</footer>
-
+    </footer>
+</body>
 </html>

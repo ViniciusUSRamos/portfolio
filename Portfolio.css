@@ -159,10 +159,45 @@ dialog .wrapper{
     padding-left: 10px;
     padding-right: 10px;
     background-color: rgb(42, 216, 130);
-}*/
+}
 #imgGerador{
 
 }
+*/
 #conteudoPopup{
-    width: 60%;
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    margin: auto;
+}
+.tituloProjetos{
+    padding: 10px;
+    padding-left: 0px;
+}
+#tituloCard{
+    padding-top: 15px;
+    font-weight: bold;
+}
+.btn{
+    --bs-btn-hover-color: var(--bs-black); /*altera a cor da fonte no hover do botao*/
+    --bs-btn-hover-bg: var(--bs-green); /*altera a cor do botao no hover*/
+}/*
+.wrapper{
+    width: 75%;
+    position: relative;
+}*/
+#conteudoPopup .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.botoesPopup {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* espaço entre os botões */
+    flex-wrap: wrap; /* evita quebrar feio em telas pequenas */
+    margin-top: 20px;
 }
