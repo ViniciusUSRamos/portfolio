@@ -232,6 +232,7 @@ footer{
   }
   #marcaNavbar{
     font-size: medium;
+    padding-right: 5%;
   }
 
   #foto{
@@ -359,6 +360,10 @@ footer{
     border-right: none !important;
     border-bottom: 1px solid rgb(42, 216, 130);
     padding-bottom: 15px;
+  }
+  .navbar .nav-link {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
   }
 
 }
