@@ -36,6 +36,12 @@ body{
     padding-bottom: 10%;
     text-align: justify !important;
 }
+#botaoContato{
+    min-width: 20%;
+}
+#botaoCurriculo{
+    min-width: 20%;
+}
 .btn{
     background-color: rgb(42, 216, 130);
     color: rgb(31, 36, 43);
@@ -200,4 +206,164 @@ dialog .wrapper{
     gap: 15px; /* espaço entre os botões */
     flex-wrap: wrap; /* evita quebrar feio em telas pequenas */
     margin-top: 20px;
+}
+
+footer{
+    padding: 30px !important;
+}
+
+/*
+    TODO: Ajustar visualização mobile para celular e tablet
+*/
+
+
+@media (max-width: 480px) {
+  /* telefones */
+  *{
+    box-sizing: border-box !important;
+  }
+
+  .navbar{
+    padding: 15px 0;
+    font-size: smaller;
+  }
+  #home{
+    padding-top: 15px;
+  }
+  #marcaNavbar{
+    font-size: medium;
+  }
+
+  #foto{
+    display: none;
+  }
+
+  #presentation{
+    margin-right: 0px;
+    justify-content: center;
+  }
+
+  #presentation {
+    flex-direction: column;
+  }
+
+  #titulo{
+    width: 100%;
+    flex: none;
+  } 
+  #botoes{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #botaoContato,
+  #botaoCurriculo{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #botaoContato a,
+  #botaoCurriculo a{
+    width: 90%;
+  }
+  #espacamento{
+    padding: 0% !important;
+  }
+  #projetos{
+    padding-top: 20%;
+  }
+  .cardPopup{
+    max-width: 85% !important;
+  }
+  #linha2{
+    display: flex;
+    flex-direction: column;
+  }
+  #experiencia,
+  #topicoSkills{
+    width: 100%;
+    padding: 10px 0;
+    padding-bottom: 50px !important;
+  }
+  #experiencia{
+    border-bottom: 1px solid rgb(42, 216, 130) !important;
+  }
+
+  #contato{
+    display: flex;
+    flex-direction: column;
+
+  }
+  #contato .d-flex {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  #info, 
+  #formContato{
+    width: 100% !important;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 15px;
+
+  }
+  #info{
+    padding-bottom: 40px;
+  }
+  #formContato{
+    width: 90%;
+  }
+  #botaoContato a,
+  #botaoCurriculo a {
+    display: inline-block;
+    width: 90%;
+  }
+  body {
+  overflow-x: hidden;
+}
+.container,
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
+}
+#contato .d-flex {
+  flex-direction: column !important;
+  align-items: center;
+}
+#contato {
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#formContato {
+  margin: 0 auto;
+}
+ #tableExp {
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  #linha2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #experiencia,
+  #topicoSkills {
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  #experiencia {
+    border-right: none !important;
+    border-bottom: 1px solid rgb(42, 216, 130);
+    padding-bottom: 15px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  /* tablets */
+  
 }
