@@ -8,7 +8,7 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfolio</title>
     <!-- Bootstrap CSS (via CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Portfolio.css">
@@ -32,19 +32,19 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
                         <a href="#" class="nav-link active">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#proj" class="nav-link">PROJETOS</a>
+                        <a href="#proj" class="nav-link">MY PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#sobre" class="nav-link">SOBRE</a>
+                        <a href="#sobre" class="nav-link">ABOUT ME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contato" class="nav-link">CONTATO</a>
+                        <a href="#contato" class="nav-link">CONTACT</a>
                     </li>
                     <li class="nav-item d-flex align-items-center">
-                        <label class="form-check-label" for="languageSwitch">PT-BR</label>
-                        <div class="form-check form-switch">
+                        <label class="form-check-label me-2" for="languageSwitch">PT-BR</label>
+                        <div class="form-check form-switch mb-0">
                             <input class="form-check-input" type="checkbox" id="languageSwitch">
-                            <label class="form-check-label" for="languageSwitch">EN</label>
+                            <label class="form-check-label ms-2" for="languageSwitch">EN</label>
                         </div>
                     </li>
                 </ul>
@@ -56,9 +56,9 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
     <div class="container-fluid text-start" id="home">
         <div class="row justify-content-between" id="presentation">
             <div class="col-9" id="titulo">
-                <h3 id="apresent1">Olá, eu sou</h1>
-                    <h1 id="apresent2">VINÍCIUS RAMOS</h1>
-                    <h6 id="apresent3">DESENVOLVEDOR</h1>
+                <h3 id="apresent1">Hi, I am</h1>
+                    <h1 id="apresent2">VINICIUS RAMOS</h1>
+                    <h6 id="apresent3">DEVELOPER</h1>
                         <div class="apresentacao" id="resumo">
 
                             <!--
@@ -66,10 +66,10 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
 
                             -->
 
-                            <p name="parInicial" id="parInicial">Sou Vinícius Uriel da Silva Ramos, um profissional
-                                dedicado, que busca evolução e formas de aplicar meus conhecimentos em diversas
-                                situações constantemente. Tenho experiência em suporte técnico e venho expandindo minhas
-                                habilidades em desenvolvimento de software e desenvolvimento web.</p>
+                            <p name="parInicial" id="parInicial">My name is Vinicius Uriel da Silva Ramos, a great
+                                professional, who is always looking for ways to improve and use my knoledge in many
+                                situations constantly. I`m a Helpdesk Support technician and Iam growing my skills
+                                in software and web development. </p>
                         </div>
             </div>
             <div class="col align-self-center" id="foto">
@@ -84,23 +84,21 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
         <div class="row justify-content-start" id="botoes">
             <div class="col-2" id="botaoContato">
                 <!-- <button type="button" autofocus onclick="document.getElementById('contato')">Entrar em Contato</button> -->
-                <a href="#contato" class="btn btn-primary" id="btnContato">Entrar em Contato</a>
+                <a href="#contato" class="btn btn-primary" id="btnContato">Contact Me</a>
                 <p id="espacoBotoes"></p>
             </div>
             <div class="col-2" id="botaoCurriculo">
-                <a target="_blank" rel="noopener noreferrer" href="Curriculo.pdf" class="btn btn-primary">Baixar
-                    Currículo</a>
+                <a target="_blank" rel="noopener noreferrer" href="Curriculo.pdf" class="btn btn-primary">Download
+                    Resume</a>
             </div>
         </div>
     </div>
 
     <div class="" id="proj">
-        <h2 class="topicos" id="projetos">Projetos</h2>
-        <p>Aqui estão alguns projetos que desenvolvi, aplicando na prática meus conhecimentos na solução de problemas
-            para empresas.</p>
+        <h2 class="topicos" id="projetos">My Projects</h2>
+        <p>Here are some of the projects made my me, applying my knoledge for solving real-life problems for companies.</p>
 
-        <button id="tituloCard" class="btn btn-primary" onclick=showDialog() style="border-radius: 25px;">GERADOR DE
-            COTAÇÕES
+        <button id="tituloCard" class="btn btn-primary" onclick=showDialog() style="border-radius: 25px;">QUOTATION GENERATOR
             <br><img src="./imgs/GeradorCotacoes/TelaInicial.png"
                 style="width: 270px; padding: 15px; padding-bottom: 20px;" alt="">
         </button>
@@ -108,17 +106,16 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
         <div id="popup">
             <dialog id="conteudoPopup" class="cardPopup">
                 <div class="wrapper">
-                    <h2 class="tituloProjetos">Gerador de Cotações</h2>
-                    <p>Projeto desenvolvido para a empresa UJR Piscinas destinado à geração de cotações
-                        personalizadas em formato PDF desenvolvido em Python.</p>
+                    <h2 class="tituloProjetos">Quotation Generator</h2>
+                    <p>Project developed for the company UJR Piscinas (Pools UJR), used for generating custom quotes in PDF, developed in Python.</p>
                     <img id="imgGerador" src="./imgs/GeradorCotacoes/TelaInicial.png" alt="Tela Inicial do Projeto"
                         class="img-fluid"><br><br>
                     <div class="botoesPopup">
                         <a target="_blank" rel="noopener noreferrer"
                             href="https://github.com/ViniciusUSRamos/GeradorCotacoes" class="btn btn-primary"
-                            style="width: fit-content;">Abrir Repositório</a>
+                            style="width: fit-content;">Open Repository</a>
                         <button class="btnPopup btn btn-primary" data-dismiss="modal"
-                            onclick="closeDialog()">Fechar</button>
+                            onclick="closeDialog()">Close</button>
                     </div>
 
                 </div>
@@ -139,16 +136,16 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
     </div>
 
     <div class="row" id="sobre">
-        <h2 class="topicos" id="sobre">Sobre</h2>
-        <p class="resSob">Técnico de suporte com experiência em atendimento remoto, resolução de bugs e dúvidas, e
-            desenvolvimento de soluções para sistemas de automação de estacionamentos.</p>
-        <p class="resSob">Busco oportunidades para atuar como desenvolvedor, contribuindo com soluções eficientes,
-            aprendizado contínuo e evolução.</p>
+        <h2 class="topicos" id="sobre">About Me</h2>
+        <p class="resSob">Helpdesk technician with experience in remote assistance, solving bugs, questions and
+            creating solutions for park automation systems.</p>
+        <p class="resSob">I am looking for opportunities as a developer, contribuiting with efficient solutions,
+            continuous learnig and improvment.</p>
         <div id="posicaoFormacao">
             <div class="row" id="FormAcademica">
-                <h4 class="topicos">Formação Acadêmica</h4>
-                <p>Curso técnico em Informática integrado ao ensino médio — IFRS (Campus Rolante) — Graduação: 2021</p>
-                <p>Bacharelado em Ciência da Computação — Universidade Feevale — Cursando atualmenta — Conclusão Prevista: 2028</p>
+                <h4 class="topicos">Education</h4>
+                <p>Technical Course Integrated to the High School — IFRS (Campus Rolante) — Graduation: 2021</p>
+                <p>Bachelor`s Degree in Computer Science — Universidade Feevale — Current Enrolled — Expected Graduation: 2028</p>
             </div>
         </div>
 
@@ -163,16 +160,14 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
             <div class="row" id="linha2">
 
                 <div class="col" id="experiencia">
-                    <h4 class="topicos">Experiência</h4>
-                    <p id="empresa2">Técnico de Helpdesk - SigaPark Automação (2023 - Hoje)</p>
-                    <p>Responsável por suporte remoto, solucionando problemas técnicos complexos relacionados ao
-                        software.
-                        Atuação proativa na identificação e correção de bugs.</p>
-                    <p id="empresa1">Gestor Tech - V4 Company (2021 - 2023)</p>
-                    <p>Liderança e coordenação de projetos. Responsável por garantir a qualidade das entregas, otimizar
-                        processos internos e alinhar soluções técnicas com os objetivos estratégicos de nossos clientes. Atuação
-                        direta na gestão de demandas, suporte a clientes e implementação de melhorias contínuas.</p>
-                   
+                    <h4 class="topicos">Experience</h4>
+                    <p id="empresa2">HelpDesk Technician - SigaPark Automação (2023 - Present)</p>
+                    <p>Responsible for remote assistance, solving complexes technical problems related to the company software.
+                        Acting proactively finding and solving bugs.</p>
+                    <p id="empresa1">Tech Manager - V4 Company (2021 - 2023)</p>
+                    <p>Leadership and coordinating projects. Responsable for ensuring the quality of tasks, optimizing
+                        internal processes and alignig solutions with the strategic goals of our clients. Working
+                        directly with demand managment, support for clients and implementing continuous improvment methods.</p>
 
                 </div>
 
@@ -180,19 +175,19 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
                     <h4 class="topicos">Skills</h4>
                     <h5 id="softSkills">Hard Skills</h5>
                     <ul>
-                        <li>Lógica de Programação e Estrutura de Dados</li>
-                        <li>Desenvolvimento em Python</li>
-                        <li>Desenvolvimento em Java</li>
-                        <li>Desenvolvimento Web front-end</li>
-                        <li>Manipulação de dados com SQL</li>
-                        <li>Modelagem de banco de dados</li>
+                        <li>Programming Logic and Data Stucture</li>
+                        <li>Python Development</li>
+                        <li>Java Development</li>
+                        <li>Front-End Web Development</li>
+                        <li>Data Manipulation</li>
+                        <li>Database Modeling</li>
                     </ul>
                     <h5 id="hardSkills">Soft Skills</h5>
                     <ul>
-                        <li>Comunicação clara com usuários técnicos e não técnicos</li>
-                        <li>Proatividade na resolução de problemas</li>
-                        <li>Capacidade de aprendizado e adaptabilidade rápida</li>
-                        <li>Trabalho em equipe e colaboração com diferentes áreas</li>
+                        <li>Clear and straigt communication with all kinds of users</li>
+                        <li>Proactivity on problem solving</li>
+                        <li>Fast learner with strong adaptability</li>
+                        <li>Teamwork and colaborating in many areas</li>
                     </ul>
                 </div>
             </div>
@@ -200,10 +195,10 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
     </div>
 
     <div class="" id="contato">
-        <h2 class="topicos" id="tituloContato">Entre em contato</h2>
+        <h2 class="topicos" id="tituloContato">Contact Me</h2>
         <div class="d-flex justify-content-between">
             <div class="" id="info">
-                <span class="camposContato">Telefone / WhatsApp: </span> <a
+                <span class="camposContato">Phone / WhatsApp: </span> <a
                     href="https://api.whatsapp.com/send/?phone=5551984887098&text&type=phone_number&app_absent=0">(51)
                     98488-7098</a> <br><br>
                 <span class="camposContato">E-mail: </span> <a
@@ -214,22 +209,22 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
             </div>
 
             <form class="form-group" id="formContato" data-bs-theme="dark" onsubmit="">
-                <label for="nome">Nome*: </label><br>
+                <label for="nome">Name*: </label><br>
                 <input class="form-control p-2" style="width: fit-content;" type="text" id="nome" name="nome"
                     placeholder="João da Silva" required><br>
-                <div class="invalid-feedback">Por favor, informe o seu nome para prosseguir!</div>
+                <div class="invalid-feedback">Please, fill your name to proceed!</div>
                 <label for="email">E-mail: </label><br>
                 <input class="form-control p-2" style="width: fit-content;" type="email" id="email" name="email"
                     placeholder="exemplo@gmail.com"><br>
-                <label for="fone">Telefone*: </label><br>
+                <label for="fone">Phone*: </label><br>
                 <input class="form-control p-2" style="width: fit-content;" type="text" id="fone" name="fone"
                     placeholder="51 99999-9999" required><br>
-                <div class="invalid-feedback">Por favor, informe o seu número de telefone para prosseguir!</div>
-                <label for="mensagem">Mensagem: </label><br>
+                <div class="invalid-feedback">Please, fill your phone number to proceed!</div>
+                <label for="mensagem">Message: </label><br>
                 <textarea class="form-control w-75 p-2" id="mensagem" name="mensagem"></textarea>
-                <small id="infoObrigatorio" class="form-text text-muted">Campos com * são obrigatórios.</small><br><br>
+                <small id="infoObrigatorio" class="form-text text-muted">Fields with * are mandatories.</small><br><br>
 
-                <button type="submit" class="btn btn-primary" id="submitContato">Enviar informações</button>
+                <button type="submit" class="btn btn-primary" id="submitContato">Send Message</button>
             </form>
         </div>
     </div>
@@ -259,7 +254,7 @@ TODO: Depois de ajustar a visualização para mobile criar a variação da pági
             <div class="row h-100 justify-content-center align-items-center">
                 <!--
                 <h4>Links Úteis: </a>
-                    <a href="www.linkedin.com/in/vinícius-ramos-66b39a204">LinkedIn</a> |
+                    <a href="www.linkedin.com/in/Vinicius-ramos-66b39a204">LinkedIn</a> |
                     <a href="https://github.com/ViniciusUSRamos">GitHub</a> |
                     <a
                         href="https://api.whatsapp.com/send/?phone=5551984887098&text&type=phone_number&app_absent=0">WhatsApp</a>

@@ -12,7 +12,7 @@ dialog.addEventListener("click", (e) => { // fecha se clicar fora da caixa de di
     if(!wrapper.contains(e.target)){
         dialog.close()
     }
-})
+});
 
 // ---------------
 // tornar o formulario funcional
@@ -29,4 +29,27 @@ botao.addEventListener("submit", function(event){
     let arrayDados = [nome, email, fone, msg]
 
     console.table(arrayDados)
+});
+
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const switchEl = document.getElementById('languageSwitch');
+
+    if (window.location.pathname.includes('indexEnglish.html')){
+        switchEl.checked = true;
+    }else{
+        switchEl.checked = false;
+    }
+
+    switchEl.addEventListener('change', () => {
+    if (switchEl.checked) {
+        // Redireciona para inglês
+        localStorage.setItem('lang', 'en');
+        window.location.href = 'indexEnglish.html';
+    } else {
+        // Redireciona para português
+        localStorage.setItem('lang', 'pt');
+        window.location.href = 'index.html';
+    }
+    });
 })

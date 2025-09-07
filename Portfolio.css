@@ -216,9 +216,8 @@ footer{
     TODO: Ajustar visualização mobile para celular e tablet
 */
 
-
+/*telefones*/
 @media (max-width: 480px) {
-  /* telefones */
   *{
     box-sizing: border-box !important;
   }
@@ -370,5 +369,7 @@ footer{
 
 @media (min-width: 768px) and (max-width: 1025px) {
   /* tablets */
-  
+  .navbar{
+    navbar-expand
+  }
 }
