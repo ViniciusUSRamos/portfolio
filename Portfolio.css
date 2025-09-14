@@ -357,13 +357,32 @@ footer{
 
   #experiencia {
     border-right: none !important;
-    border-bottom: 1px solid rgb(42, 216, 130);
-    padding-bottom: 15px;
+    border-bottom: none !important;
+    padding: 15px;
   }
   .navbar .nav-link {
     padding-left: 4px !important;
     padding-right: 4px !important;
   }
+  #tableExp{
+    border: none;
+  }
+  #FormAcademica{
+    padding-top: 10%;
+    border: none;
+  }
+  #experiencia{
+    padding-top: 10%;
+    border: none;
+  }
+  #topicoSkills{
+    border: none;
+    padding: 15px;
+  }
+  #empresa1{
+    border: none;
+  }
+
 
 }
 
