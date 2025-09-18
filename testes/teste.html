@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Switch</title>
+</head>
+<body>
+    <label for="languageSwitch">PT-BR</label>
+    <input type="checkbox" id="languageSwitch">
+    <label for="languageSwitch">EN</label>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const switchEl = document.getElementById('languageSwitch');
+
+            // Verifica se o switch está no HTML
+            if (!switchEl) {
+                console.error("Switch não encontrado!");
+                return;
+            }
+
+            // Mantém estado do switch
+            const lang = localStorage.getItem('lang');
+            if (lang === 'en') {
+                switchEl.checked = true;
+            } else {
+                switchEl.checked = false;
+            }
+
+            switchEl.addEventListener('change', () => {
+                if (switchEl.checked) {
+                    localStorage.setItem('lang', 'en');
+                    console.log('Vai para inglês');
+                    // window.location.href = 'indexEnglish.html';
+                } else {
+                    localStorage.setItem('lang', 'pt');
+                    console.log('Vai para português');
+                    // window.location.href = 'index.html';
+                }
+            });
+
+            console.log('Switch carregado');
+        });
+    </script>
+</body>
+</html>

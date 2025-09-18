@@ -212,8 +212,58 @@ footer{
     padding: 30px !important;
 }
 
+.NomeProjeto{
+  color: rgb(204, 204, 204);
+  font-weight: bold;
+}
+
+.DescProjeto{
+  color: rgb(204, 204, 204);
+}
+
+.carousel-inner{
+  max-width: 900px;
+  max-height: 700px;
+}
+
+.carousel-inner img{
+  max-height: 700px;
+  max-width: 900px;
+  object-fit: scale-down;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  filter: invert(100%);
+}
+
+#carrosselProjetos{
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.carousel-caption{
+  background-color: rgba(31, 36, 43, 0.9);
+  border-radius: 15px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
-    TODO: Ajustar visualização mobile para celular e tablet
+----------------------------------------------------------------------------------------------------------------
+================================================================================================================
+----------------------------------------------------------------------------------------------------------------
 */
 
 /*telefones*/
